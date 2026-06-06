@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coleção Bíblica Infantil | +500 Atividades Prontas</title>
+    <meta
+      name="description"
+      content="+500 atividades bíblicas prontas para imprimir e aplicar em minutos. Material completo para professoras, líderes e mães."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Fixed Banner -->
+    <div id="offer-banner">
+      <i data-lucide="clock"></i>
+      <span>OFERTA VÁLIDA SOMENTE HOJE <span id="current-date"></span></span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero pt-20">
+      <div class="container">
+        <h1 class="font-black">
+          <span class="text-primary">+500</span> atividades bíblicas prontas
+          para imprimir e aplicar em minutos
+        </h1>
+        <p class="text-muted">
+          <span class="font-bold">Material completo</span> para professoras,
+          líderes e mães que desejam ensinar a Bíblia de forma leve e
+          envolvente.
+        </p>
+        <p class="text-muted" style="margin-bottom: 1rem">
+          Assista ao vídeo abaixo 👇
+        </p>
+
+        <div class="video-container">
+          <video
+            id="vsl-video"
+            src="assets/videoplayback.mp4"
+            playsinline
+            loop
+            muted
+            controls
+            style="width: 100%; height: 100%; object-fit: cover;"
+          ></video>
+          <div id="vsl-overlay" class="vsl-overlay">
+            <div class="vsl-unmute-btn">
+              <i data-lucide="volume-x"></i>
+              <span>Clique para Ativar o Som</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#oferta" class="btn btn-primary"
+          >Quero Minhas 500 Atividades agora!</a
+        >
+
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+          "
+          class="text-muted"
+        >
+          <span style="display: flex; align-items: center; gap: 0.5rem"
+            ><i data-lucide="shield-check" style="color: #22c55e"></i> Compre
+            100% Segura</span
+          >
+          <span style="display: flex; align-items: center; gap: 0.5rem"
+            ><i data-lucide="zap" class="text-primary"></i> Acesso
+            Imediato</span
+          >
+          <span style="display: flex; align-items: center; gap: 0.5rem"
+            ><i data-lucide="clock"></i> Garantia de 7 dias</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="what-you-get">
+      <div class="container container-content">
+        <h2
+          class="text-center font-black"
+          style="font-size: 2rem; margin-bottom: 3rem"
+        >
+          📖 O Que Você Vai <span class="text-primary">Receber</span>
+        </h2>
+        <div class="grid-4">
+          <div class="card">
+            <div class="icon-box">
+              <i data-lucide="book-open" class="w-7"></i>
+            </div>
+            <h3 class="font-bold">+500 Atividades Bíblicas</h3>
+            <p class="text-muted" style="font-size: 0.875rem">
+              Dinâmicas, jogos, histórias e atividades prontas para aplicar.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon-box">
+              <i data-lucide="scroll-text" class="w-7"></i>
+            </div>
+            <h3 class="font-bold">Histórias do Antigo e Novo Testamento</h3>
+            <p class="text-muted" style="font-size: 0.875rem">
+              Dinâmicas e roteiros simples da Criação até Jesus.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon-box"><i data-lucide="puzzle" class="w-7"></i></div>
+            <h3 class="font-bold">Jogos e Passatempos</h3>
+            <p class="text-muted" style="font-size: 0.875rem">
+              Caça-palavras, labirintos e quebra-cabeças focados na Palavra.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon-box">
+              <i data-lucide="palette" class="w-7"></i>
+            </div>
+            <h3 class="font-bold">Páginas de Colorir</h3>
+            <p class="text-muted" style="font-size: 0.875rem">
+              Atividades manuais para prender a atenção dos menores.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions/Benefits -->
+    <section style="background-color: hsl(var(--card))">
+      <div class="container">
+        <h2
+          class="text-center font-black"
+          style="font-size: 2rem; margin-bottom: 3rem"
+        >
+          📖 A <span class="text-primary">Solução Perfeita</span> para Você
+          Que...
+        </h2>
+        <div class="grid-4">
+          <div
+            class="card"
+            style="border: 1px solid hsl(var(--border)); cursor: default"
+          >
+            <div
+              class="icon-box bg-primary"
+              style="color: white; border: none; border-radius: 1rem"
+            >
+              <i data-lucide="clock" class="w-7"></i>
+            </div>
+            <h3 class="font-bold">Não tem tempo</h3>
+            <p class="text-muted" style="font-size: 0.875rem">
+              Material 100% pronto. É só baixar e aplicar no mesmo dia.
+            </p>
+          </div>
+          <div
+            class="card"
+            style="border: 1px solid hsl(var(--border)); cursor: default"
+          >
+            <div
+              class="icon-box bg-primary"
+              style="color: white; border: none; border-radius: 1rem"
+            >
+              <i data-lucide="sparkles" class="w-7"></i>
+            </div>
+            <h3 class="font-bold">Quer atenção</h3>
+            <p class="text-muted" style="font-size: 0.875rem">
+              Diga adeus às aulas monótonas. Atividades que as crianças amam.
+            </p>
+          </div>
+          <div
+            class="card"
+            style="border: 1px solid hsl(var(--border)); cursor: default"
+          >
+            <div
+              class="icon-box bg-primary"
+              style="color: white; border: none; border-radius: 1rem"
+            >
+              <i data-lucide="book-open-check" class="w-7"></i>
+            </div>
+            <h3 class="font-bold">Busca ensino fiel</h3>
+            <p class="text-muted" style="font-size: 0.875rem">
+              Conteúdo rigorosamente fundamentado na Palavra.
+            </p>
+          </div>
+          <div
+            class="card"
+            style="border: 1px solid hsl(var(--border)); cursor: default"
+          >
+            <div
+              class="icon-box bg-primary"
+              style="color: white; border: none; border-radius: 1rem"
+            >
+              <i data-lucide="home" class="w-7"></i>
+            </div>
+            <h3 class="font-bold">Ensina em Casa</h3>
+            <p class="text-muted" style="font-size: 0.875rem">
+              Adaptável para mães, líderes e professores da EBD.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bonus Section -->
+    <section class="bonus-section">
+      <div class="container text-center">
+        <span
+          style="
+            background: white;
+            color: hsl(var(--primary));
+            padding: 0.5rem 1.5rem;
+            border-radius: 100px;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+          "
+        >
+          <i data-lucide="gift"></i> Receba 3 Bônus Incríveis GRÁTIS!
+        </span>
+        <p style="margin-bottom: 3rem; opacity: 0.9">
+          Materiais extras que vão transformar suas aulas em experiências
+          inesquecíveis
+        </p>
+
+        <div class="bonus-grid">
+          <div class="bonus-card">
+            <img src="assets/bonus-1.png" alt="Potinho da Oração" />
+            <h3 class="font-bold">Potinho da Oração Infantil</h3>
+            <p style="font-size: 0.9rem; opacity: 0.9">
+              Modelos prontos para cultivar o hábito da oração diária.
+            </p>
+            <span class="value-tag"
+              >VALOR: <span class="line-through">R$ 19,90</span></span
+            >
+          </div>
+          <div class="bonus-card">
+            <img src="assets/bonus-2.png" alt="Livro de Colorir" />
+            <h3 class="font-bold">Livro de Colorir</h3>
+            <p style="font-size: 0.9rem; opacity: 0.9">
+              Ilustrações bíblicas para colorir e fortalecer os ensinamentos.
+            </p>
+            <span class="value-tag"
+              >VALOR: <span class="line-through">R$ 27,00</span></span
+            >
+          </div>
+          <div class="bonus-card">
+            <img src="assets/bonus-3.png" alt="Jogos Bíblicos" />
+            <h3 class="font-bold">Jogos Bíblicos Educativos</h3>
+            <p style="font-size: 0.9rem; opacity: 0.9">
+              Atividades interativas para tornar o aprendizado divertido.
+            </p>
+            <span class="value-tag"
+              >VALOR: <span class="line-through">R$ 37,00</span></span
+            >
+          </div>
+        </div>
+
+        <div style="margin-top: 3rem">
+          <p style="font-size: 1.25rem; font-weight: 700">
+            Total em bônus: <span class="line-through">R$ 83,90</span>
+          </p>
+          <a
+            href="#oferta"
+            class="btn btn-success"
+            style="margin-top: 1.5rem; font-size: 1.2rem; padding: 1.25rem 3rem"
+            >HOJE: GRÁTIS!</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 4rem">
+          <p
+            class="text-primary font-bold"
+            style="
+              letter-spacing: 0.1em;
+              font-size: 0.8rem;
+              margin-bottom: 1rem;
+            "
+          >
+            DEPOIMENTOS REAIS
+          </p>
+          <h2 class="font-black" style="font-size: 2.5rem">
+            O Que Dizem Professoras e
+            <span class="text-primary">Mães Cristãs</span>
+          </h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i data-lucide="star" style="fill: currentColor"></i
+              ><i data-lucide="star" style="fill: currentColor"></i
+              ><i data-lucide="star" style="fill: currentColor"></i
+              ><i data-lucide="star" style="fill: currentColor"></i
+              ><i data-lucide="star" style="fill: currentColor"></i>
+            </div>
+            <div class="testimonial-content">
+              "Eu sempre sofria pra preparar aula toda semana... era muito tempo
+              perdido. Depois que comecei a usar esse material, ficou muito mais
+              fácil! Já vem tudo pronto e meus alunos participam muito mais."
+            </div>
+            <div class="testimonial-user">
+              <img
+                src="assets/testimonial-1-dSZDzBmj.jpg"
+                alt="Carla Rodrigues"
+              />
+              <div>
+                <p class="font-bold">Carla Rodrigues</p>
+                <p class="text-primary" style="font-size: 0.75rem">
+                  Professora de Escola Dominical
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i data-lucide="star" style="fill: currentColor"></i
+              ><i data-lucide="star" style="fill: currentColor"></i
+              ><i data-lucide="star" style="fill: currentColor"></i
+              ><i data-lucide="star" style="fill: currentColor"></i
+              ><i data-lucide="star" style="fill: currentColor"></i>
+            </div>
+            <div class="testimonial-content">
+              "Material simplesmente incrível! Uso no ministério infantil e fez
+              toda diferença. As atividades são práticas, simples de aplicar e
+              as crianças ficam envolvidas do começo ao fim."
+            </div>
+            <div class="testimonial-user">
+              <img
+                src="assets/testimonial-2-AXhWkqap.jpg"
+                alt="Patrícia Lima"
+              />
+              <div>
+                <p class="font-bold">Patrícia Lima</p>
+                <p class="text-primary" style="font-size: 0.75rem">
+                  Líder do Ministério Infantil
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i data-lucide="star" style="fill: currentColor"></i
+              ><i data-lucide="star" style="fill: currentColor"></i
+              ><i data-lucide="star" style="fill: currentColor"></i
+              ><i data-lucide="star" style="fill: currentColor"></i
+              ><i data-lucide="star" style="fill: currentColor"></i>
+            </div>
+            <div class="testimonial-content">
+              "Comprei pra usar em casa com meus filhos e foi a melhor decisão!
+              Eles amaram os joguinhos, e agora pedem pra aprender mais sobre a
+              Bíblia. É lindo ver eles se aproximando de Deus."
+            </div>
+            <div class="testimonial-user">
+              <img
+                src="assets/testimonial-3-G8_DGLs1.jpg"
+                alt="Juliana Silva"
+              />
+              <div>
+                <p class="font-bold">Juliana Silva</p>
+                <p class="text-primary" style="font-size: 0.75rem">Mãe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing/Offer -->
+    <section id="oferta" style="background-color: hsl(var(--warm-beige))">
+      <div class="container text-center">
+        <h2 class="font-black" style="font-size: 2.5rem; margin-bottom: 2rem">
+          Escolha o Melhor Plano para Você!
+        </h2>
+
+        <div
+          style="
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+          "
+        >
+          <div
+            style="
+              background: hsla(21, 94%, 53%, 0.1);
+              border: 1px solid hsla(21, 94%, 53%, 0.3);
+              color: hsl(var(--primary));
+              font-weight: 700;
+              padding: 0.5rem 1.5rem;
+              border-radius: 100px;
+              font-size: 0.8rem;
+            "
+          >
+            ⏰ Oferta por tempo limitado – Acaba em:
+          </div>
+          <div
+            class="timer-display"
+            style="display: flex; gap: 1rem; align-items: flex-start"
+          >
+            <div>
+              <div class="timer-box" id="timer-m">19</div>
+              <div class="timer-label">Minutos</div>
+            </div>
+            <div style="font-size: 2rem; font-weight: 900; margin-top: 10px">
+              :
+            </div>
+            <div>
+              <div class="timer-box" id="timer-s">59</div>
+              <div class="timer-label">Segundos</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-container">
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3 class="font-bold">Plano Básico</h3>
+              <p class="text-muted" style="font-size: 0.8rem">
+                Acesso essencial
+              </p>
+            </div>
+            <div class="plan-price">R$ 10,00</div>
+            <ul class="plan-features">
+              <li>
+                <i data-lucide="circle-check-big"></i> +500 Atividades Bíblicas
+              </li>
+              <li>
+                <i data-lucide="circle-check-big"></i> Arquivos em PDF para
+                imprimir
+              </li>
+              <li>
+                <i data-lucide="circle-check-big"></i> Acesso imediato via
+                e-mail
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="btn btn-primary"
+              style="
+                width: 100%;
+                background: white;
+                color: hsl(var(--foreground));
+                border: 1px solid hsl(var(--border));
+                box-shadow: none;
+              "
+              >QUERO O BÁSICO</a
+            >
+          </div>
+
+          <div class="plan-card premium">
+            <div class="badge-popular">Mais Vendido</div>
+            <div class="plan-header">
+              <h3 class="font-bold text-primary">Plano Premium</h3>
+              <p class="text-muted" style="font-size: 0.8rem">
+                Coleção Completa + Bônus
+              </p>
+            </div>
+            <div
+              style="
+                font-size: 0.9rem;
+                color: #ef4444;
+                text-decoration: line-through;
+              "
+            >
+              De R$ 247,00
+            </div>
+            <div class="plan-price">R$ 19,90</div>
+            <p style="font-size: 0.8rem; opacity: 0.6; margin-bottom: 1.5rem">
+              Custo único - Acesso Vitalício
+            </p>
+            <ul class="plan-features">
+              <li>
+                <i data-lucide="circle-check-big"></i>
+                <b>Tudo do Plano Básico</b>
+              </li>
+              <li>
+                <i data-lucide="circle-check-big"></i> Bônus 1: Potinho da
+                Oração
+              </li>
+              <li>
+                <i data-lucide="circle-check-big"></i> Bônus 2: Livro de Colorir
+              </li>
+              <li>
+                <i data-lucide="circle-check-big"></i> Bônus 3: Jogos Bíblicos
+              </li>
+              <li><i data-lucide="circle-check-big"></i> Guia de Versículos</li>
+              <li>
+                <i data-lucide="circle-check-big"></i> Atualizações Gratuitas
+              </li>
+            </ul>
+            <a href="#" class="btn btn-success" style="width: 100%"
+              >QUERO O PREMIUM!</a
+            >
+            <div
+              style="
+                margin-top: 1rem;
+                font-size: 0.7rem;
+                color: #22c55e;
+                font-weight: 600;
+              "
+            >
+              +2.500 pessoas escolheram esta oferta
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Author Section -->
+    <section>
+      <div class="container">
+        <p
+          class="text-center text-primary font-bold"
+          style="letter-spacing: 0.2em; font-size: 0.8rem; margin-bottom: 2rem"
+        >
+          SOBRE A AUTORA
+        </p>
+        <div class="author-card">
+          <div class="author-image">
+            <img
+              src="assets/smiley-woman-holding-closed-book.jpg"
+              alt="Ana Cristina"
+            />
+            <div class="author-tag">Autora</div>
+          </div>
+          <div class="author-info">
+            <h3 class="font-black" style="font-size: 2rem">Ana Cristina</h3>
+            <p class="text-primary font-bold" style="margin-bottom: 1.5rem">
+              Educadora Cristã e Líder do Ministério Infantil
+            </p>
+            <div class="text-muted" style="font-size: 0.95rem">
+              <p style="margin-bottom: 1rem">
+                Com anos de experiência no ensino bíblico infantil,
+                <b>Ana Cristina</b> dedica sua caminhada a ajudar crianças a
+                crescerem na fé desde cedo.
+              </p>
+              <p style="margin-bottom: 1rem">
+                Seu propósito é claro: ensinar a Palavra de Deus de forma leve,
+                criativa e significativa, fortalecendo valores cristãos na vida
+                das crianças através da <b>Coleção Bíblica Infantil</b>.
+              </p>
+            </div>
+            <div style="display: flex; gap: 2rem; margin-top: 2rem">
+              <div style="text-align: center">
+                <p class="font-black" style="font-size: 1.5rem">10+</p>
+                <p style="font-size: 0.7rem">Anos de Ministério</p>
+              </div>
+              <div style="text-align: center">
+                <p class="font-black" style="font-size: 1.5rem">Milhares</p>
+                <p style="font-size: 0.7rem">Crianças Impactadas</p>
+              </div>
+              <div style="text-align: center">
+                <p class="font-black" style="font-size: 1.5rem">Bíblia</p>
+                <p style="font-size: 0.7rem">Ensino Fundamentado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section style="background: hsla(21, 94%, 53%, 0.05)">
+      <div class="container text-center">
+        <div
+          style="
+            width: 80px;
+            height: 80px;
+            background: hsl(var(--primary));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            box-shadow: var(--shadow-primary);
+          "
+        >
+          <i data-lucide="shield-check" style="width: 40px; height: 40px"></i>
+        </div>
+        <h2 class="font-black" style="font-size: 2rem">
+          Sua Compra <span class="text-primary">100% Segura</span>
+        </h2>
+        <p class="text-muted" style="max-width: 600px; margin: 1rem auto 3rem">
+          Sua satisfação é garantida! Se por qualquer motivo você não ficar
+          satisfeito, tem <b>7 dias para pedir seu dinheiro de volta</b>. Risco
+          zero!
+        </p>
+
+        <a href="#oferta" class="btn btn-primary" style="padding: 1.25rem 3rem"
+          ><i data-lucide="lock"></i> COMPRAR COM SEGURANÇA</a
+        >
+
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+          "
+          class="text-muted"
+        >
+          <span style="display: flex; align-items: center; gap: 0.5rem"
+            ><i data-lucide="lock" class="text-primary" style="width: 16px"></i>
+            Compra Segura</span
+          >
+          <span style="display: flex; align-items: center; gap: 0.5rem"
+            ><i
+              data-lucide="check-circle"
+              class="text-primary"
+              style="width: 16px"
+            ></i>
+            Satisfação Garantida</span
+          >
+          <span style="display: flex; align-items: center; gap: 0.5rem"
+            ><i
+              data-lucide="award"
+              class="text-primary"
+              style="width: 16px"
+            ></i>
+            Qualidade Premium</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+          "
+        >
+          <i
+            data-lucide="book-open"
+            class="text-primary"
+            style="width: 32px; height: 32px"
+          ></i>
+          <span style="font-size: 1.25rem; font-weight: 800"
+            >Coleção Bíblica Infantil</span
+          >
+        </div>
+        <p style="margin-bottom: 1rem">
+          Transformando o aprendizado bíblico infantil através da criatividade.
+        </p>
+        <p>
+          &copy; 2026 Coleção Bíblica Infantil. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
