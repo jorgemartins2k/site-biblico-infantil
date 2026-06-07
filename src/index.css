@@ -1,31 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --background: 30 50% 97%;
+  --background: 30 40% 93%;
   --foreground: 20 20% 15%;
-  --card: 0 0% 100%;
+  --card: 30 40% 99%;
   --card-foreground: 20 20% 15%;
-  --popover: 0 0% 100%;
+  --popover: 30 40% 99%;
   --popover-foreground: 20 20% 15%;
   --primary: 210 68% 57%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 30 40% 94%;
+  --secondary: 30 30% 95%;
   --secondary-foreground: 20 20% 15%;
-  --muted: 30 20% 93%;
+  --muted: 30 20% 92%;
   --muted-foreground: 20 10% 45%;
   --accent: 142 40% 90%;
   --accent-foreground: 142 40% 25%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
-  --border: 30 20% 88%;
-  --input: 30 20% 88%;
+  --border: 30 20% 86%;
+  --input: 30 20% 86%;
   --ring: 210 68% 57%;
   --radius: 1.25rem;
   --baby-blue: 200 80% 92%;
   --baby-blue-foreground: 200 60% 30%;
   --soft-green: 142 40% 50%;
   --soft-green-foreground: 0 0% 100%;
-  --warm-beige: 30 50% 95%;
+  --warm-beige: 30 40% 96%;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -454,19 +454,21 @@ section {
 .plan-card.premium {
   border: 2px solid hsl(var(--primary));
   box-shadow: var(--shadow-lg);
-  overflow: hidden;
 }
 
 .badge-popular {
   position: absolute;
-  top: 1rem;
-  right: -2rem;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   background: hsl(var(--soft-green));
   color: white;
-  padding: 0.25rem 3rem;
-  transform: rotate(45deg);
-  font-size: 0.75rem;
+  padding: 0.4rem 2rem;
+  border-radius: 100px;
+  font-size: 0.8rem;
   font-weight: 800;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 .plan-header {
@@ -655,8 +657,7 @@ footer p {
     padding: 2.5rem 0;
   }
   .badge-popular {
-    right: -1.5rem;
-    padding: 0.25rem 2.5rem;
+    padding: 0.35rem 1.5rem;
     font-size: 0.7rem;
   }
 }
@@ -664,10 +665,8 @@ footer p {
 /* Very small screens (max-width: 400px) */
 @media (max-width: 400px) {
   .badge-popular {
-    right: -1.25rem;
-    padding: 0.2rem 2rem;
+    padding: 0.3rem 1.25rem;
     font-size: 0.65rem;
-    top: 0.75rem;
   }
   .plan-card {
     padding: 1.5rem 1rem;
