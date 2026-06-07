@@ -79,7 +79,7 @@ const OfferBanner = ({ minutes, seconds }) => {
   }, []);
 
   return (
-    <div className="offer-banner">
+    <div className="offer-banner flex-wrap">
       <Calendar className="w-5 h-5" />
       <span>
         Oferta Válida até <strong>{currentDate}</strong> — Faltam{" "}
@@ -335,7 +335,7 @@ const Testimonials = () => (
 );
 
 const Pricing = ({ minutes, seconds }) => (
-  <section id="oferta" className="bg-primary" style={{ backgroundColor: "hsla(var(--primary), 0.05)" }}>
+  <section id="oferta" style={{ backgroundColor: "hsla(var(--primary), 0.05)" }}>
     <div className="container text-center">
       <h2 className="font-black" data-scroll>
         Acesso Vitalício por um Preço Especial!

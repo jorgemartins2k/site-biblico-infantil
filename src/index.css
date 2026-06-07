@@ -58,6 +58,95 @@ body {
   padding: 0 1.5rem;
 }
 
+/* Layout */
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-center {
+  align-items: center;
+}
+.items-start {
+  align-items: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+
+/* Spacing */
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.mt-16 {
+  margin-top: 4rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.mb-12 {
+  margin-bottom: 3rem;
+}
+.mb-16 {
+  margin-bottom: 4rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sizing */
+.w-full {
+  width: 100%;
+}
+.w-5 {
+  width: 1.25rem;
+}
+.h-5 {
+  height: 1.25rem;
+}
+.w-12 {
+  width: 3rem;
+}
+.h-12 {
+  height: 3rem;
+}
+
+/* Typography */
+.text-sm {
+  font-size: 0.875rem;
+}
+.inline {
+  display: inline;
+}
+.fill-current {
+  fill: currentColor;
+}
+
+/* Opacity */
+.opacity-50 {
+  opacity: 0.5;
+}
+.opacity-60 {
+  opacity: 0.6;
+}
+
 .text-primary {
   color: hsl(var(--primary)) !important;
 }
@@ -485,6 +574,123 @@ footer {
 footer p {
   opacity: 0.6;
   font-size: 0.8rem;
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+/* Tablet and below (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/* Mobile landscape / small tablet (max-width: 640px) */
+@media (max-width: 640px) {
+  section {
+    padding: 3rem 0;
+  }
+  .pt-20 {
+    padding-top: 3.5rem;
+  }
+  .btn {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  .author-card {
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+  .author-image img {
+    width: 140px;
+    height: 140px;
+  }
+  .offer-banner {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Mobile portrait (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+  .hero p {
+    font-size: 0.95rem;
+    padding: 0 0.25rem;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  .offer-banner {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    gap: 0.25rem;
+  }
+  .bonus-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .pricing-container {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .plan-card {
+    padding: 2rem 1.25rem;
+  }
+  .plan-price {
+    font-size: 2.25rem;
+  }
+  .timer-box {
+    width: 70px;
+    height: 70px;
+    font-size: 1.75rem;
+  }
+  footer {
+    padding: 2.5rem 0;
+  }
+  .badge-popular {
+    right: -1.5rem;
+    padding: 0.25rem 2.5rem;
+    font-size: 0.7rem;
+  }
+}
+
+/* Very small screens (max-width: 400px) */
+@media (max-width: 400px) {
+  .badge-popular {
+    right: -1.25rem;
+    padding: 0.2rem 2rem;
+    font-size: 0.65rem;
+    top: 0.75rem;
+  }
+  .plan-card {
+    padding: 1.5rem 1rem;
+  }
+  .plan-features li {
+    font-size: 0.8rem;
+  }
+}
+
+/* Tiny screens (max-width: 360px) */
+@media (max-width: 360px) {
+  .video-container {
+    max-width: 100%;
+    border-radius: 1.25rem;
+  }
+  .vsl-unmute-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    gap: 0.5rem;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
 }
 
 /* Animations */
