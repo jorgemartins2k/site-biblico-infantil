@@ -692,6 +692,114 @@ footer p {
   }
 }
 
+/* Modal Styles */
+.vsl-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.vsl-modal {
+  background: hsl(var(--card));
+  width: 100%;
+  max-width: 500px;
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  animation: modalScale 0.3s ease-out;
+}
+
+@keyframes modalScale {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.vsl-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: hsl(var(--muted-foreground));
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.2s;
+}
+
+.vsl-modal-close:hover {
+  color: hsl(var(--foreground));
+}
+
+.vsl-modal-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.vsl-modal-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.vsl-modal-content {
+  text-align: center;
+}
+
+.vsl-modal-content p {
+  font-size: 0.95rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.5;
+}
+
+.vsl-upsell-price {
+  background: hsl(var(--warm-beige));
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.vsl-upsell-price span.font-black {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.vsl-modal-no {
+  background: none;
+  border: none;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.vsl-modal-no:hover {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .vsl-modal {
+    padding: 2rem 1.25rem;
+  }
+  .vsl-upsell-price span.font-black {
+    font-size: 2rem;
+  }
+}
+
 /* Animations */
 [data-scroll] {
   opacity: 0;

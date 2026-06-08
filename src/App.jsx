@@ -12,6 +12,7 @@ import {
   Star,
   Check,
   VolumeX,
+  X,
 } from "lucide-react";
 
 // --- Custom Hooks ---
@@ -66,6 +67,44 @@ function useScrollAnimations() {
 }
 
 // --- Components ---
+
+const UpsellModal = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="vsl-modal-overlay">
+      <div className="vsl-modal" data-scroll>
+        <button className="vsl-modal-close" onClick={onClose}>
+          <X className="w-6 h-6" />
+        </button>
+        <div className="vsl-modal-header">
+          <h2 className="font-black text-primary">ESPERA! NÃO VÁ AINDA! ✋</h2>
+          <p className="font-bold">Temos uma oferta especial e única para você hoje.</p>
+        </div>
+        <div className="vsl-modal-content">
+          <p>
+            Vimos que você se interessou pelo Plano Básico, mas que tal levar o <strong>PLANO PREMIUM COMPLETO</strong> (+500 atividades + todos os bônus) por um preço quase igual ao básico?
+          </p>
+          <div className="vsl-upsell-price">
+            <span className="text-muted line-through">R$ 19,99</span>
+            <span className="text-primary font-black">R$ 14,99</span>
+          </div>
+          <ul className="plan-features" style={{ margin: "1.5rem 0" }}>
+            <li><Check className="w-4 h-4 text-primary" /> +500 Atividades Bíblicas</li>
+            <li><Check className="w-4 h-4 text-primary" /> Todos os 3 Bônus Inclusos</li>
+            <li><Check className="w-4 h-4 text-primary" /> Acesso Vitalício</li>
+          </ul>
+          <a href="#" className="btn btn-primary w-full">
+            SIM! QUERO O PREMIUM POR R$ 14,99
+          </a>
+          <button className="vsl-modal-no" onClick={onClose}>
+            Não, obrigado. Quero apenas o básico por R$ 10.
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const OfferBanner = ({ minutes, seconds }) => {
   const [currentDate, setCurrentDate] = useState("");
@@ -334,7 +373,7 @@ const Testimonials = () => (
   </section>
 );
 
-const Pricing = ({ minutes, seconds }) => (
+const Pricing = ({ minutes, seconds, onOpenUpsell }) => (
   <section id="oferta" style={{ backgroundColor: "hsla(var(--primary), 0.05)" }}>
     <div className="container text-center">
       <h2 className="font-black" data-scroll>
@@ -348,7 +387,7 @@ const Pricing = ({ minutes, seconds }) => (
           <div className="plan-header">
             <h3 className="font-bold">Acesso Básico</h3>
             <p className="text-muted">Essencial para começar</p>
-            <div className="plan-price">R$ 27</div>
+            <div className="plan-price">R$ 10</div>
           </div>
           <ul className="plan-features">
             <li>
@@ -361,9 +400,13 @@ const Pricing = ({ minutes, seconds }) => (
               <Check className="w-5 h-5" /> Acesso imediato via e-mail
             </li>
           </ul>
-          <a href="#" className="btn w-full" style={{ border: "2px solid hsl(var(--primary))" }}>
+          <button
+            onClick={onOpenUpsell}
+            className="btn w-full"
+            style={{ border: "2px solid hsl(var(--primary))", background: "none" }}
+          >
             QUERO O BÁSICO
-          </a>
+          </button>
         </div>
 
         {/* Premium Plan */}
@@ -372,7 +415,7 @@ const Pricing = ({ minutes, seconds }) => (
           <div className="plan-header">
             <h3 className="font-bold text-primary">Plano Premium</h3>
             <p className="text-muted">Pacote Completo + Bônus</p>
-            <div className="plan-price">R$ 47</div>
+            <div className="plan-price">R$ 19,99</div>
           </div>
           <ul className="plan-features">
             <li>
@@ -462,6 +505,7 @@ const Footer = () => (
 
 function App() {
   const { minutes, seconds } = useTimer(20);
+  const [isUpsellOpen, setIsUpsellOpen] = useState(false);
   useScrollAnimations();
 
   return (
@@ -472,9 +516,18 @@ function App() {
       <Benefits />
       <Bonus />
       <Testimonials />
-      <Pricing minutes={minutes} seconds={seconds} />
+      <Pricing
+        minutes={minutes}
+        seconds={seconds}
+        onOpenUpsell={() => setIsUpsellOpen(true)}
+      />
       <Author />
       <Footer />
+
+      <UpsellModal
+        isOpen={isUpsellOpen}
+        onClose={() => setIsUpsellOpen(false)}
+      />
     </main>
   );
 }
