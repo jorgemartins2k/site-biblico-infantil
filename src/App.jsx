@@ -73,7 +73,7 @@ const UpsellModal = ({ isOpen, onClose }) => {
 
   return (
     <div className="vsl-modal-overlay">
-      <div className="vsl-modal" data-scroll>
+      <div className="vsl-modal">
         <button className="vsl-modal-close" onClick={onClose}>
           <X className="w-6 h-6" />
         </button>
